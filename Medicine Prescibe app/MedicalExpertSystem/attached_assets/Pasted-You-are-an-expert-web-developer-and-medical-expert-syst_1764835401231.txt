@@ -1,0 +1,66 @@
+You are an expert web developer and medical expert-system designer.
+
+Build a complete website (frontend + backend logic) that works as a safe
+Medical Expert System for symptom checking. 
+
+The website must follow these rules:
+
+1. The system should NOT prescribe exact medical drugs or dosages.
+2. It may suggest general OTC categories (e.g., “antacid”, “pain reliever like paracetamol”).
+3. It must suggest possible conditions based on symptoms without diagnosing.
+4. It must ALWAYS ask follow-up questions for missing info.
+5. It must ALWAYS show red-flag warnings and when to see a doctor.
+6. It must include a clear medical disclaimer.
+
+Website Requirements:
+---------------------
+**Frontend:**
+- Modern, responsive UI (React / Next.js or your best choice)
+- Clean input box where user enters symptoms
+- A button: “Analyze Symptoms”
+- Results section showing:
+  - Possible conditions (with reasoning)
+  - OTC categories
+  - Home remedies
+  - Follow-up questions
+  - Emergency warning conditions
+- Light/Dark mode toggle
+- Professional medical theme
+
+**Backend / Logic:**
+- Implement a rule-based expert system:
+  - IF symptoms match → THEN return list of possible conditions
+  - Use probability-based language (e.g., “may indicate”, “possibly”)
+  - Provide general OTC categories (no prescriptions)
+  - Never give exact dosages
+- Add structured JSON output:
+  {
+    conditions: [],
+    reasoning: [],
+    otcs: [],
+    homeRemedies: [],
+    followUpQuestions: [],
+    redFlags: []
+  }
+
+**Features:**
+- Search symptoms
+- View suggestions
+- Clear button
+- Optional: Save previous symptom checks locally
+
+**Safety Rules (MANDATORY):**
+- No prescription drugs
+- No medical certainty
+- Add disclaimer: “Not a substitute for professional medical diagnosis.”
+
+Deliverables Required:
+----------------------
+1. Full website code (React/Next.js or HTML/CSS/JS)
+2. All components
+3. Expert-system logic file
+4. CSS styling
+5. How to run the project
+6. Example output
+
+Start by generating the full project structure and code.
